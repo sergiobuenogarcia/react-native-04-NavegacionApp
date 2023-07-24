@@ -1,5 +1,20 @@
 import {StyleSheet} from 'react-native';
 
+export const CustomTheme = {
+  colors: {
+    secondaryContainer: '#5856D6', // background of active tab on bottom tab navigator
+    onSurface: 'white', // active text color of bottom tab navigator
+    // onSurfaceVariant: '#adadad', // inactive text color of bottom tab navigator
+    elevation: {
+      level2: '#5856D6', //background color of bottom tab navigator
+    },
+  },
+};
+
+export const colores = {
+  primary: '#5856D6',
+};
+
 export const styles = StyleSheet.create({
   globalMargin: {
     marginHorizontal: 20,
