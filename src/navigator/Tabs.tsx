@@ -1,12 +1,13 @@
 /* eslint-disable react/no-unstable-nested-components */
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {Tab1Screen, Tab2Screen} from '../screens/Screens';
+import {Tab1Screen} from '../screens/Screens';
 import StackNavigator from './StackNavigator';
 import {colores} from '../theme/appTheme';
 import {Platform, Text} from 'react-native';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
 import TopTavNavigator from './TopTabNavigator';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 const Tabs = () => {
   return Platform.OS === 'ios' ? <TabsIOS /> : <TabsAndroid />;
@@ -26,16 +27,20 @@ const TabsAndroid = () => {
           let iconName: string = '';
           switch (route.name) {
             case 'Tab1Screen':
-              iconName = 'T1';
+              iconName = 'bandage-outline';
               break;
             case 'Tab2Screen':
-              iconName = 'T2';
+              iconName = 'basketball-outline';
               break;
             case 'Tab3Screen':
-              iconName = 'St';
+              iconName = 'bookmarks-outline';
               break;
           }
-          return <Text style={{color: color}}>{iconName}</Text>;
+          return (
+            <Text style={{color: color}}>
+              <Icon name={iconName} size={20} color={color} />
+            </Text>
+          );
         },
       })}>
       <BottomTabAndroid.Screen
@@ -80,17 +85,20 @@ const TabsIOS = () => {
           let iconName: string = '';
           switch (route.name) {
             case 'Tab1Screen':
-              iconName = 'T1';
+              iconName = 'bandage-outline';
               break;
             case 'Tab2Screen':
-              iconName = 'T2';
+              iconName = 'basketball-outline';
               break;
             case 'Tab3Screen':
-              iconName = 'St';
+              iconName = 'bookmarks-outline';
               break;
           }
-
-          return <Text style={{color: color}}>{iconName}</Text>;
+          return (
+            <Text style={{color: color}}>
+              <Icon name={iconName} size={20} color={color} />
+            </Text>
+          );
         },
       })}>
       {/* <Tab.Screen

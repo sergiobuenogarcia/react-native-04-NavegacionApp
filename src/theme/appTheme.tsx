@@ -52,7 +52,12 @@ export const styles = StyleSheet.create({
     marginHorizontal: 50,
   },
   menuBoton: {
+    flexDirection: 'row',
     marginVertical: 10,
+  },
+  menuIcon: {
+    paddingTop: 3,
+    marginRight: 5,
   },
   menuItem: {
     fontSize: 20,
