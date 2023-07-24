@@ -13,6 +13,7 @@ export const CustomTheme = {
 
 export const colores = {
   primary: '#5856D6',
+  primarySemiTransparent: 'rgba(88, 86, 214, 0.5)',
 };
 
 export const styles = StyleSheet.create({

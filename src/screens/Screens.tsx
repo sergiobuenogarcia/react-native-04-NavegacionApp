@@ -4,7 +4,9 @@ import Pagina3Screen from './Pagina3Screen';
 import PersonaScreen from './PersonaScreen';
 import SettingsScreen from './SettingsScreen';
 import Tab1Screen from './Tab1Screen';
-import Tab2Screen from './Tab2Screen';
+import ChatScreen from './ChatScreen';
+import ContactsScreen from './ContactsScreen';
+import AlbumScreen from './AlbumScreen';
 
 export {
   Pagina1Screen,
@@ -13,7 +15,9 @@ export {
   PersonaScreen,
   SettingsScreen,
   Tab1Screen,
-  Tab2Screen,
+  ChatScreen,
+  ContactsScreen,
+  AlbumScreen,
 };
 
 export type RootStackParams = {
