@@ -8,6 +8,7 @@ import {NavigationContainer} from '@react-navigation/native';
 // import StackNavigator from './src/navigator/StackNavigator';
 // import MenuLateralBasico from './src/navigator/MenuLateralBasico';
 import MenuLateral from './src/navigator/MenuLateral';
+import {AuthProvider} from './src/context/AuthContext';
 // import Tabs from './src/navigator/Tabs';
 
 const theme = {
@@ -22,10 +23,12 @@ const App = () => {
   return (
     <PaperProvider theme={theme}>
       <NavigationContainer>
-        {/* <StackNavigator /> */}
-        {/* <MenuLateralBasico /> */}
-        <MenuLateral />
-        {/* <Tabs /> */}
+        <AuthProvider>
+          {/* <StackNavigator /> */}
+          {/* <MenuLateralBasico /> */}
+          {/* <Tabs /> */}
+          <MenuLateral />
+        </AuthProvider>
       </NavigationContainer>
     </PaperProvider>
   );

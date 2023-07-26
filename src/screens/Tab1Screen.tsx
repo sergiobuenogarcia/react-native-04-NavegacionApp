@@ -1,9 +1,8 @@
 import React, {useEffect} from 'react';
 import {Text, View} from 'react-native';
-import {colores, styles} from '../theme/appTheme';
-// import Icon from 'react-native-vector-icons/Ionicons';
-import Icon from 'react-native-vector-icons/Ionicons';
+import {styles} from '../theme/appTheme';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
+import TouchableIcon from '../components/TouchableIcon';
 
 const Tab1Screen = () => {
   useEffect(() => {
@@ -17,12 +16,12 @@ const Tab1Screen = () => {
       <Text style={styles.title}> Iconos </Text>
 
       <Text>
-        <Icon name="airplane-outline" size={80} color={colores.primary} />
-        <Icon name="accessibility-outline" size={80} color={colores.primary} />
-        <Icon name="car-sport-outline" size={80} color={colores.primary} />
-        <Icon name="cash-outline" size={80} color={colores.primary} />
-        <Icon name="cut-outline" size={80} color={colores.primary} />
-        <Icon name="desktop-outline" size={80} color={colores.primary} />
+        <TouchableIcon name="airplane-outline" />
+        <TouchableIcon name="accessibility-outline" />
+        <TouchableIcon name="car-sport-outline" />
+        <TouchableIcon name="cash-outline" />
+        <TouchableIcon name="cut-outline" />
+        <TouchableIcon name="desktop-outline" />
       </Text>
     </View>
   );
